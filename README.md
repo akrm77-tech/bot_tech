@@ -1,107 +1,25 @@
-```markdown
-# 🤖 Bot_Tech – بوت منصة الوعي التفاعلي
+# 🤖 بوت منصة الوعي التقني (Bot Tech)
 
-![Version](https://img.shields.io/badge/version-1.0.0-green?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3.8+-yellow?style=flat-square&logo=python)
+بوت تفاعلي متقدم مخصص لخدمة المتعلمين والربط بمنصة الوعي التقني بأسلوب سلس وسريع.
 
----
-
-## 🌟 عن المشروع
-
-المحرك التقني للبوت الذكي الخاص بـ **منصة الوعي (Waey Platform)**، المنصة الرائدة في التعليم والتدريب الإلكتروني.
-
-**رابط المنصة:** [alway3alatiqny3.netlify.app](https://alway3alatiqny3.netlify.app/)
-
----
-
-## 🎯 الأهداف
-
-- الرد على استفسارات المستخدمين تلقائياً
-- إرسال إشعارات وتذكيرات بالدورات
-- توجيه المستخدمين للمحتوى المناسب
-- تقديم دعم فني فوري
-
----
-
-## 🛠️ التقنيات
-
-| التقنية | الغرض |
-|---------|-------|
-| Python | لغة البرمجة |
-| Telegram Bot API | واجهة البوت |
-| Requests / aiohttp | التعامل مع API |
-| python-dotenv | المتغيرات البيئية |
-
----
-
-## 📁 هيكل المشروع
-
-```
-bot_tech/
-├── bot.py              # الملف الرئيسي
-├── config.py           # الإعدادات
-├── handlers/           # معالجات الأوامر
-├── utils/              # أدوات مساعدة
-├── .env                # المتغيرات البيئية
-├── requirements.txt    # المكتبات
-└── README.md           # هذا الملف
-```
-
----
+## 📁 هيكلية المشروع
+- `src/`: يحتوي على الكود المصدري الرئيسي (`main.py`).
+- `docs/`: ملفات التوثيق والشرح.
+- `assets/`: الأصول والوسائط المستخدمة.
 
 ## ⚙️ التثبيت والتشغيل
-
-```bash
-# 1. استنساخ المستودع
-git clone https://github.com/your-username/bot_tech.git
-cd bot_tech
-
-# 2. تثبيت المتطلبات
-pip install -r requirements.txt
-
-# 3. إعداد المتغيرات (أنشئ ملف .env)
-BOT_TOKEN=your_token_here
-PLATFORM_URL=https://alway3alatiqny3.netlify.app/
-
-# 4. التشغيل
-python bot.py
-```
+1. استنسخ المستودع:
+   ```bash
+   git clone https://github.com/akrm77-tech/bot_tech.git
+   ```
+2. تثبيت التبعيات:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. تشغيل البوت:
+   ```bash
+   python src/main.py
+   ```
 
 ---
-
-## 📄 ملف requirements.txt
-
-```
-python-telegram-bot==20.3
-requests==2.31.0
-python-dotenv==1.0.0
-aiohttp==3.8.5
-```
-
----
-
-## 🤝 المساهمة
-
-1. Fork المشروع
-2. أنشئ فرعاً جديداً (`git checkout -b feature/new-feature`)
-3. اعمل Commit (`git commit -m 'إضافة ميزة جديدة'`)
-4. ارفع التغييرات (`git push origin feature/new-feature`)
-5. افتح Pull Request
-
----
-
-## 📞 التواصل
-
-- **المنصة:** [alway3alatiqny3.netlify.app](https://alway3alatiqny3.netlify.app/)
-- **البوت:** [@YourBotUsername](https://t.me/YourBotUsername)
-
----
-
-## 📄 الترخيص
-
-MIT License
-
----
-
-**مع وعي، وعيك يرتقي** 🧠💡
-```
+المهندس أكرم الشرعبي © 2026
