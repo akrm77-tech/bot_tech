@@ -16,10 +16,25 @@
    ```bash
    pip install -r requirements.txt
    ```
-3. تشغيل البوت:
+3. عرّف إعدادات التشغيل خارج الكود:
+   ```bash
+   export BOT_TOKEN='ضع_رمز_البوت_في_بيئة_آمنة'
+   export CHANNEL_ID='@AlWa3yAlTaqni'
+   ```
+4. تشغيل البوت:
    ```bash
    python src/main.py
    ```
+
+> لا تضع رمز Telegram داخل `src/main.py` أو README أو سجل التشغيل. إذا كان الرمز قد ظهر سابقاً في Git، ألغِه من BotFather وأنشئ رمزاً جديداً قبل النشر.
+
+## الاختبار والتحقق
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+الاختبارات لا تتصل بـ Telegram ولا تحتاج إلى `BOT_TOKEN`.
 
 ---
 المهندس أكرم الشرعبي © 2026
