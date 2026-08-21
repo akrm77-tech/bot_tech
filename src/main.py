@@ -12,14 +12,18 @@ from datetime import datetime, timedelta
 from threading import Thread
 import csv
 import io
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 from telegram.constants import ParseMode
 # ==================== الإعدادات الأساسية ====================
-TOKEN = "8446461024:AAFR_QgFz4JoXrT2GtF-0VYDqI9Fy2vY-q0
-"  # استبدل بالتوكن الحقيقي
-ADMIN_IDS = [6677854381,7891169650]  # ضع معرفات المديرين هنا
-CHANNEL_ID = "@AlWa3yAlTaqni"  # قناة المنصة
+# Never store Telegram credentials in source control.
+TOKEN = os.environ.get("BOT_TOKEN", "")
+ADMIN_IDS = [6677854381, 7891169650]
+CHANNEL_ID = os.environ.get("CHANNEL_ID", "@AlWa3yAlTaqni")
+
+if not TOKEN:
+    raise RuntimeError("BOT_TOKEN is required; set it as an environment variable or GitHub secret")
 
 # ==================== قاعدة البيانات ====================
 DB_NAME = "tech_awareness.db"
