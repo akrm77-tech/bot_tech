@@ -1,40 +1,114 @@
-# 🤖 بوت منصة الوعي التقني (Bot Tech)
+# Bot Tech
 
-بوت تفاعلي متقدم مخصص لخدمة المتعلمين والربط بمنصة الوعي التقني بأسلوب سلس وسريع.
+بوت Telegram لخدمة المتعلمين وربطهم بمنصة الوعي التقني.
 
-## 📁 هيكلية المشروع
-- `src/`: يحتوي على الكود المصدري الرئيسي (`main.py`).
-- `docs/`: ملفات التوثيق والشرح.
-- `assets/`: الأصول والوسائط المستخدمة.
+## المميزات
 
-## ⚙️ التثبيت والتشغيل
-1. استنسخ المستودع:
-   ```bash
-   git clone https://github.com/akrm77-tech/bot_tech.git
-   ```
-2. تثبيت التبعيات:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. عرّف إعدادات التشغيل خارج الكود:
-   ```bash
-   export BOT_TOKEN='ضع_رمز_البوت_في_بيئة_آمنة'
-   export CHANNEL_ID='@AlWa3yAlTaqni'
-   ```
-4. تشغيل البوت:
-   ```bash
-   python src/main.py
-   ```
+* أوامر ورسائل تفاعلية.
+* أزرار وقوائم سهلة الاستخدام.
+* ربط بخدمات منصة الوعي التقني.
+* تشغيل مستمر واستجابة سريعة.
+* حفظ رمز البوت في متغيرات البيئة.
 
-> لا تضع رمز Telegram داخل `src/main.py` أو README أو سجل التشغيل. إذا كان الرمز قد ظهر سابقاً في Git، ألغِه من BotFather وأنشئ رمزاً جديداً قبل النشر.
+## المتطلبات
 
-## الاختبار والتحقق
+* Python 3.7 أو أحدث.
+* Git.
+* Telegram Bot Token.
+
+## التثبيت
+
+```bash
+git clone https://github.com/akrm77-tech/bot_tech.git
+cd bot_tech
+python3 -m venv .venv
+```
+
+تفعيل البيئة الافتراضية:
+
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+### Windows
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+تثبيت المتطلبات:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## الإعداد
+
+ضع رمز البوت في متغير البيئة `BOT_TOKEN` بدلًا من كتابته داخل الكود.
+
+### Linux / macOS
+
+```bash
+export BOT_TOKEN="YOUR_BOT_TOKEN"
+```
+
+### Windows PowerShell
+
+```powershell
+$env:BOT_TOKEN="YOUR_BOT_TOKEN"
+```
+
+## التشغيل
+
+```bash
+python src/main.py
+```
+
+## الاختبارات
+
+لتشغيل الاختبارات:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-الاختبارات لا تتصل بـ Telegram ولا تحتاج إلى `BOT_TOKEN`.
+الاختبارات لا تحتاج إلى رمز البوت.
 
----
-المهندس أكرم الشرعبي © 2026
+## بنية المشروع
+
+```text
+bot_tech/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── gitleaks.yml
+├── src/
+│   ├── main.py
+│   ├── handlers/
+│   └── utils/
+├── tests/
+├── .gitignore
+├── README.md
+├── SECURITY.md
+├── LICENSE
+└── requirements.txt
+```
+
+## الأمان
+
+* لا تضع رمز البوت داخل ملفات المشروع.
+* لا ترفع ملف `.env` إلى GitHub.
+* استخدم متغيرات البيئة لحفظ البيانات الحساسة.
+* إذا تم نشر رمز البوت بالخطأ، قم بإلغائه وإنشاء رمز جديد.
+
+لمزيد من التفاصيل راجع ملف `SECURITY.md`.
+
+## الإصدار
+
+`1.0`
+
+## المطور
+
+[@akrm77-tech]
